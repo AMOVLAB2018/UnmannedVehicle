@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>视觉无人机 - AMOVLAB(阿木实验室)</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u89c6\u89c9\u65e0\u4eba\u673a";
+    var mkdocs_page_input_path = "\u89c6\u89c9\u907f\u969c\u65e0\u4eba\u673a\u4ea7\u54c1\u8bf4\u660e(new).md";
+    var mkdocs_page_url = "/\u89c6\u89c9\u907f\u969c\u65e0\u4eba\u673a\u4ea7\u54c1\u8bf4\u660e(new)/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="./" class="icon icon-home"> AMOVLAB(阿木实验室)</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">视觉无人机</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#prometheus100">Prometheus100视觉无人机开发平台产品说明书</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_1">产品概述</a></li>
+        
+            <li><a class="toctree-l3" href="#_2">产品属性</a></li>
+        
+            <li><a class="toctree-l3" href="#_3">产品特色</a></li>
+        
+            <li><a class="toctree-l3" href="#_4">我们提供如下算法例程和开发文档</a></li>
+        
+            <li><a class="toctree-l3" href="#_5">本开发套件可实现功能举例</a></li>
+        
+            <li><a class="toctree-l3" href="#_6">联系方式</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../%E6%97%A0%E4%BA%BA%E8%BD%A6%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0%E5%8F%8A%E5%85%B6%E8%AF%BE%E7%A8%8B%E4%BD%93%E7%B3%BB1/">无人车</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../%E5%A4%8D%E5%90%88%E5%9B%BA%E5%AE%9A%E7%BF%BC%E6%8B%BC%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/">垂直起降</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="./">AMOVLAB(阿木实验室)</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="./">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>视觉无人机</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="prometheus100">Prometheus100视觉无人机开发平台产品说明书</h1>
+<blockquote></blockquote>
+<h2 id="_1">产品概述</h2>
+<p>该款视觉无人机开发套件是一款针对开发者，上手简单，功能强大、且方便灵活扩展的无人机开发平台。其主要硬件包括：PIXHAWK飞控一套，英伟达TX1/TX2板卡，旋转式激光雷达，单目/双目摄像头。可以开发无人机室内定位，无人机视觉相关算法。借助英伟达的TX1/TX2支持深度学习的GPU来做复杂的室内定位和机器视觉相关的算法开发。我们提供完整的开发环境和开发例程。帮助大家迅速搭建好一整套的无人机机器视觉开发环境，再利用我们的提供的Demo例程上手开发工作，会事半功倍，更加去专注于算法的开发，让研发更高效。</p>
+<h2 id="_2">产品属性</h2>
+<p><img alt="" src="../media/24dd90626827a96793359e9db749da55.jpg" /></p>
+<blockquote>
+<p>品牌：AMOV LAB</p>
+<p>名称：Prometheus100视觉无人机开发平台（P100）</p>
+<p>机载电脑：定制板载款TX1/TX2（2选1）</p>
+<p>二维激光雷达：思岚A2/雷神激光雷达（2选1）</p>
+<p>单目相机：百万像素摄像头（可定制）</p>
+<p>动力：DJI snail​（动力套装可定制）</p>
+</blockquote>
+<h2 id="_3">产品特色</h2>
+<ul>
+<li>
+<p>自主设计机架</p>
+<p>充分考虑各配件及传感器安装位置</p>
+<p>轴距335 满足室内外飞行条件</p>
+</li>
+<li>
+<p>成熟实际可用的程序源码</p>
+<p>囊括导航、控制及视觉三大模块</p>
+<p>控制模块二次封装，提供更多的控制指令接口</p>
+<p>基于实际情况，视觉模块提供基于opencv库深度改进的源码</p>
+</li>
+<li>
+<p>更加便利的二次开发体验</p>
+<p>提供全套程序的开发手册及教程</p>
+<p>专业的售后服务团队提供开发指导</p>
+</li>
+</ul>
+<h2 id="_4">我们提供如下算法例程和开发文档</h2>
+<ul>
+<li>
+<p>自主导航模块</p>
+<p>二维激光雷达定位</p>
+<p>超声波定高</p>
+<p>基于谷歌开源激光slam算法cartographer实现无人机自主定位</p>
+</li>
+<li>
+<p>自主控制模块</p>
+<p>底层控制：PX4开源飞控</p>
+<p>机载电脑端：MAVROS包（功能：实时接受飞控状态；可发送位置、速度、加速度、姿态角、姿态角速度、力矩控制指令到飞控）</p>
+<p>基于MAVROS包的二次封装，可提供一键起飞、降落、悬停、紧急上锁、惯性系及机体系下的控制指令（位置控制、速度控制或组合控制），使得上层模块开发更加便利</p>
+</li>
+<li>
+<p>视觉模块</p>
+<p>基于opencv库深度改进的 形状识别(方框 或 圆识别)算法</p>
+<p>基于传统方法及机器学习的 数字识别(手写体或打印体)算法</p>
+<p>基于opencv库深度改进的二维码识别算法</p>
+<p>基于神经网络的通用目标识别算法（提供通用目标训练软件 及 教程）</p>
+</li>
+</ul>
+<h2 id="_5">本开发套件可实现功能举例</h2>
+<ul>
+<li>
+<p>便捷的验证内外环控制算法及导航算法</p>
+<p>利用MAVROS包直接编写无人机控制或导航算法，比起直接对飞控源码进行开发，难度低，调试方便</p>
+</li>
+<li>
+<p>提供基于单目视觉的自主降落</p>
+<p>利用配备的单目摄像头加板载程序可实现无人机自主降落功能</p>
+</li>
+<li>
+<p>无人机自主避障</p>
+<p>利用激光雷达可实现简单情况下的自主避障实验</p>
+</li>
+<li>
+<p>常见目标识别</p>
+<p>利用板载程序可直接实现数字、形状识别</p>
+<p>利用板载YOLO深度学习算法实现80种已有分类的目标识</p>
+</li>
+<li>
+<p>通用目标追踪</p>
+<p>利用通用目标训练软件，快速制作训练集，实现特定目标识别</p>
+</li>
+<li>
+<p>更多可能，请持续关注本产品</p>
+</li>
+</ul>
+<h2 id="_6">联系方式</h2>
+<blockquote>
+<p>单位：成都铂贝科技有限公司</p>
+<p>地址：四川省成都市郫都区菁蓉小镇胜利北街217号</p>
+<p>负责人：潇齐</p>
+<p>电话：18582458006</p>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../%E6%97%A0%E4%BA%BA%E8%BD%A6%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0%E5%8F%8A%E5%85%B6%E8%AF%BE%E7%A8%8B%E4%BD%93%E7%B3%BB1/" class="btn btn-neutral float-right" title="无人车">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="../%E6%97%A0%E4%BA%BA%E8%BD%A6%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0%E5%8F%8A%E5%85%B6%E8%AF%BE%E7%A8%8B%E4%BD%93%E7%B3%BB1/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

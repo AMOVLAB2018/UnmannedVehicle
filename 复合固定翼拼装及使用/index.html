@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>垂直起降 - AMOVLAB(阿木实验室)</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u5782\u76f4\u8d77\u964d";
+    var mkdocs_page_input_path = "\u590d\u5408\u56fa\u5b9a\u7ffc\u62fc\u88c5\u53ca\u4f7f\u7528.md";
+    var mkdocs_page_url = "/\u590d\u5408\u56fa\u5b9a\u7ffc\u62fc\u88c5\u53ca\u4f7f\u7528/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../%E8%A7%86%E8%A7%89%E9%81%BF%E9%9A%9C%E6%97%A0%E4%BA%BA%E6%9C%BA%E4%BA%A7%E5%93%81%E8%AF%B4%E6%98%8E%28new%29/" class="icon icon-home"> AMOVLAB(阿木实验室)</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../%E8%A7%86%E8%A7%89%E9%81%BF%E9%9A%9C%E6%97%A0%E4%BA%BA%E6%9C%BA%E4%BA%A7%E5%93%81%E8%AF%B4%E6%98%8E%28new%29/">视觉无人机</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../%E6%97%A0%E4%BA%BA%E8%BD%A6%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0%E5%8F%8A%E5%85%B6%E8%AF%BE%E7%A8%8B%E4%BD%93%E7%B3%BB1/">无人车</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">垂直起降</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#ardupilot">ardupilot复合翼无人机拼装图解</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#1">步骤1</a></li>
+        
+            <li><a class="toctree-l3" href="#2">步骤2</a></li>
+        
+            <li><a class="toctree-l3" href="#3">步骤3</a></li>
+        
+            <li><a class="toctree-l3" href="#4">步骤4</a></li>
+        
+            <li><a class="toctree-l3" href="#5">步骤5</a></li>
+        
+            <li><a class="toctree-l3" href="#6">步骤6</a></li>
+        
+            <li><a class="toctree-l3" href="#7">步骤7</a></li>
+        
+            <li><a class="toctree-l3" href="#8">步骤8</a></li>
+        
+            <li><a class="toctree-l3" href="#9">步骤9</a></li>
+        
+            <li><a class="toctree-l3" href="#10">步骤10</a></li>
+        
+            <li><a class="toctree-l3" href="#11">步骤11</a></li>
+        
+            <li><a class="toctree-l3" href="#12">步骤12</a></li>
+        
+            <li><a class="toctree-l3" href="#13">步骤13</a></li>
+        
+            <li><a class="toctree-l3" href="#14">步骤14</a></li>
+        
+            <li><a class="toctree-l3" href="#15">步骤15</a></li>
+        
+            <li><a class="toctree-l3" href="#16">步骤16</a></li>
+        
+            <li><a class="toctree-l3" href="#17">步骤17</a></li>
+        
+            <li><a class="toctree-l3" href="#18">步骤18</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../%E8%A7%86%E8%A7%89%E9%81%BF%E9%9A%9C%E6%97%A0%E4%BA%BA%E6%9C%BA%E4%BA%A7%E5%93%81%E8%AF%B4%E6%98%8E%28new%29/">AMOVLAB(阿木实验室)</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../%E8%A7%86%E8%A7%89%E9%81%BF%E9%9A%9C%E6%97%A0%E4%BA%BA%E6%9C%BA%E4%BA%A7%E5%93%81%E8%AF%B4%E6%98%8E%28new%29/">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>垂直起降</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ardupilot">ardupilot复合翼无人机拼装图解</h1>
+<hr />
+<h4 id="1">步骤1</h4>
+<p>找到箱子中的这包木片，将其组装成如下图所示：</p>
+<p><img alt="" src="https://i.imgur.com/tJmnd5q.jpg" /></p>
+<h4 id="2">步骤2</h4>
+<p>利用泡沫胶，将步骤1的成品装在机身上，如下图所示</p>
+<p><img alt="" src="https://i.imgur.com/Antq6pJ.jpg" /></p>
+<h4 id="3">步骤3</h4>
+<p>拿出4个舵机，并对其进行通电回中，接线方式如下图所示。之后将舵机摇臂安装到舵机上并拧上螺丝。</p>
+<p><img alt="" src="https://i.imgur.com/MUWGERf.jpg" /></p>
+<h4 id="4">步骤4</h4>
+<p>将舵机分别安装在机翼和V尾上，并安装舵角拉杆</p>
+<p><img alt="" src="https://i.imgur.com/uPC86oF.jpg" /></p>
+<h4 id="5">步骤5</h4>
+<p>拿出4个朗宇电机，安装好桨座并减去电机香蕉头</p>
+<p><img alt="" src="https://i.imgur.com/6PV2QDI.jpg" /></p>
+<h4 id="6">步骤6</h4>
+<p>将已准备好的4个电机安装到机臂上，并与电调进行焊接，焊接见下图3。这架垂起使用的是H型机架，因此，1、2位顺时针旋转，3、4为逆时针旋转。</p>
+<p><img alt="" src="https://i.imgur.com/Gj2FfWY.jpg" /></p>
+<p><img alt="" src="https://i.imgur.com/HEh7K3d.jpg" /></p>
+<p><img alt="" src="../media/aa0cc93f1e4b50e0cab27a648e81cab0.png" /></p>
+<h4 id="7">步骤7</h4>
+<p>拿出机身，切掉下图片中画黑线处</p>
+<p><img alt="" src="https://i.imgur.com/JYOnSbm.jpg" /></p>
+<h4 id="8">步骤8</h4>
+<p>拿出这块两块木片，画出木片中线，并在所示位置均匀涂抹泡沫胶，然后粘贴在下图中所示1、2位置。</p>
+<p><img alt="" src="https://i.imgur.com/9N0dCWE.jpg" />
+<img alt="" src="https://i.imgur.com/dqP4v0f.jpg" /></p>
+<h4 id="9">步骤9</h4>
+<p>用热熔胶将尾推电机粘在机尾，并将电机三根线延长至舱盖处，便于调整电机转向。</p>
+<p><img alt="" src="https://i.imgur.com/2eDNatY.jpg" /></p>
+<h4 id="10">步骤10</h4>
+<p>将机臂如下图摆放，用两个螺丝刀固定住机臂和机身，然后利用热风枪将第三个螺丝刀吹热然后沿着机臂上的固定孔向下戳。（其余机臂固定孔使用同样的方法）</p>
+<p><img alt="" src="https://i.imgur.com/7SBvXLD.jpg" /></p>
+<h4 id="11">步骤11</h4>
+<p>焊接分电板见下图，随后给分电板打上热熔胶。</p>
+<p><img alt="" src="https://i.imgur.com/dFpmeSE.jpg" /></p>
+<p><img alt="" src="https://i.imgur.com/xaPWWVF.jpg" /></p>
+<h4 id="12">步骤12</h4>
+<p>将分电板固定在此处</p>
+<p><img alt="" src="https://i.imgur.com/4CHoI5z.jpg" /></p>
+<h4 id="13">步骤13</h4>
+<p>在两半机身接缝处均匀涂抹泡沫胶，然后在下图所示机尾位置处打上热熔胶并迅速粘和机身。并用配套的M3*25cm螺丝固定机臂</p>
+<p><img alt="" src="https://i.imgur.com/1p8OlfS.jpg" /></p>
+<h4 id="14">步骤14</h4>
+<p>成品图如下</p>
+<p><img alt="" src="https://i.imgur.com/sC2U2gd.jpg" /></p>
+<h4 id="15">步骤15</h4>
+<p>将前后机臂电源线并联，并焊上XT60公头。然后将多旋翼前后电源延长线焊上母头。</p>
+<p><img alt="" src="https://i.imgur.com/H8dQ5qr.jpg" /></p>
+<p><img alt="" src="https://i.imgur.com/pJMhUtP.jpg" /></p>
+<h4 id="16">步骤16</h4>
+<p>在机身中间隔舱上安装减震板。然后剪短所有舵机VCC线然后和UBEC的VCC接在一起。</p>
+<p><img alt="" src="https://i.imgur.com/1kOnmNA.jpg" /></p>
+<h4 id="17">步骤17</h4>
+<p>挑掉尾推电机电调的VCC线以免电调VCC对飞控产生干扰。并将UBEC的GND线插在飞控板上。</p>
+<p><img alt="" src="https://i.imgur.com/NgbPzIC.jpg" /></p>
+<h4 id="18">步骤18</h4>
+<p>首先先将飞控输入固定翼固件并且校准加速度计过后再安装飞控。</p>
+<p>飞控具体接线顺序</p>
+<p>1——副翼舵机
+2——左尾舵机
+3——尾推电机
+4——右尾舵机
+5——1号电机
+6——2号电机
+7——3号电机
+8——4号电机</p>
+<p><img alt="" src="https://i.imgur.com/mSjBe91.jpg" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../%E6%97%A0%E4%BA%BA%E8%BD%A6%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0%E5%8F%8A%E5%85%B6%E8%AF%BE%E7%A8%8B%E4%BD%93%E7%B3%BB1/" class="btn btn-neutral" title="无人车"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../%E6%97%A0%E4%BA%BA%E8%BD%A6%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0%E5%8F%8A%E5%85%B6%E8%AF%BE%E7%A8%8B%E4%BD%93%E7%B3%BB1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
